@@ -1,10 +1,9 @@
-user_input = input("Введите число x: ")
+number = input("Введите число x: ")
 
-# Убираем пробелы и проверяем, что в строке только цифры и максимум одна точка
-if not user_input.strip() or user_input.count('.') > 1 or not user_input.replace('.', '', 1).isdigit():
+if not number.strip() or number.count('.') > 1 or not number.replace('.', '', 1).isdigit():
     print("Ошибка: введите корректное число!")
 else:
-    x = float(user_input)
+    x = float(number)
     
     if x < 1:
         print("Чисел нет, так как x меньше 1")
